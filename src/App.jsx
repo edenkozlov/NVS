@@ -6,6 +6,7 @@ import Home from './components/Home/Index'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Para from './components/Paragraph/Index'
 import Para2 from './components/Paragraph2/Index'
+import Para3 from './components/Paragraph3';
 import Real from './components/Real/Index'
 import Team from './components/Team/Index'
 import LocomotiveScroll from 'locomotive-scroll';
@@ -55,6 +56,7 @@ function App() {
       <Team  />
       <Para  />
       <Para2 />
+      <Para3 />
       <Capsule />
       <Footer />
     </div>    

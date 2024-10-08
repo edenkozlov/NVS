@@ -1,11 +1,11 @@
-import img1 from '../../assets/images/eden.jpg';
+import img1 from '../../assets/images/shady.jpg';
 import { useEffect } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Para() {
+function Para3() {
     useEffect(() => {
         var clutter = "";
         const para = document.querySelector(".textpara")
@@ -37,17 +37,17 @@ function Para() {
             <div className='hidden w-[50%] sm:flex items-center justify-center mb-12'>
                 <hr className='bg-zinc-400 w-[20%] h-[.3vh]' />
             </div>    
-            <h3 className='textpara sm:w-[50%] text-blue-600 font-[Sansita] tracking-wide text-[2.4vh] sm:text-[3.5vh] font-medium text-center leading-[5vh] mb-10'>Eden is the biggest chigga by far that has ever existed, lord praise Eden the chigga. </h3>
+            <h3 className='textpara sm:w-[50%] text-blue-600 font-[Sansita] tracking-wide text-[2.4vh] sm:text-[3.5vh] font-medium text-center leading-[5vh] mb-10'>Shady is the biggest chigga by far that has ever existed, lord praise Shady the chigga. </h3>
             <div className="pers w-[50%] flex flex-col items-center justify-center gap-2 ">
                 <div className="image w-24 h-24 overflow-hidden rounded-full ">
                     <img src={img1} />
                 </div>
-                <h1 className=' text-[2.8vh] sm:text-[3.8vh] font-medium'>Eden Kozlov</h1>
-                <h3 className='text-zinc-500 text-[2.4vh] whitespace-nowrap'>Product Manager</h3>
+                <h1 className=' text-[2.8vh] sm:text-[3.8vh] font-medium'>Shady Guindi</h1>
+                <h3 className='text-zinc-500 text-[2.4vh] whitespace-nowrap'>COO </h3>
             </div>
         </div>  
     </div>
   )
 }
 
-export default Para
+export default Para3
