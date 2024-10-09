@@ -1,5 +1,6 @@
 // index.jsx
 import video from '../../assets/video/1ENIoa5sjq.mp4';
+import Image from '../../assets/images/image.png';
 import Row, { itemsGroup1, itemsGroup2, itemsGroup3, itemsGroup4 } from '../Row';
 import { useEffect, useState, useRef } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
@@ -87,7 +88,7 @@ function Home() {
                 </div>
 
                 <div className={`vdodiv w-full h-screen absolute z-[3] top-0 left-0 overflow-hidden sm:overflow-visible ${styles.vdodiv}`}>
-                    <video className="absolute w-full h-screen object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" autoPlay loop muted src={video}></video>
+                    <img className="absolute w-full h-screen object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" autoPlay loop muted src={Image}/>
                 </div>
 
                 <div className="marqueecontainer w-full h-screen relative overflow-hidden">
