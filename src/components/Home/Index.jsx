@@ -65,6 +65,15 @@ function Home() {
                         <div className="logo w-[12vh] h-[12vh] sm:w-[16vh] sm:h-[10vh] cursor-pointer z-[9] mt-2">
                             <img src={Logo} alt='Logo' height={48} width={48} />
                         </div>
+                        <div className="hidden md:flex gap-2 items-center z-[9] cursor-pointer ">
+                        {["Solutions", "About", "Insight", "Team", "Careers"].map((item, index) => (
+                            <h4 key={index} className={`${styles.links} h-[3vh] relative py[2.4vh] px-[2.2vh] text-center  flex flex-col
+                            font-[Sansita] text-[2.1vh] overflow-hidden font-medium leading-[2.5vh]`}> 
+                                <a className={`atag ${styles.atag} relative`}>{item} </a>
+                                <a className={`atag ${styles.atag} relative`}>{item} </a>                      
+                            </h4>   
+                        ))}
+</div>
                         <BiMenu style={{ fontSize: "5.5vw" }} className='inline-block sm:hidden z-[9] cursor-pointer' />
                     </div>
                 </motion.div>
@@ -101,3 +110,7 @@ function Home() {
 }
 
 export default Home;
+
+
+
+
