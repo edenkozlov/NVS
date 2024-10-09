@@ -41,11 +41,11 @@ export const itemsGroup2 = [
 ];
 
 export const itemsGroup3 = [
-    { text: "Seamless", image: img10 },
+    { text: "Seamless", image: img9 }, //Mobile (soldity)
     { text: "Automated", image: img14 },
     { text: "Flexible", image: img6 },
     { text: "Secure", image: img12 },
-    { text: "Seamless", image: img6 }, //Mobile (Rust)
+    { text: "Seamless", image: img2 }, //Mobile (Vue)
     { text: "Automated", image: img11 },
     { text: "Flexible", image: img12 },
     { text: "Secure", image: img13 },
