@@ -19,7 +19,7 @@ import PropTypes from 'prop-types';
 
 // Split items into four unique groups for export
 export const itemsGroup1 = [
-    { text: "Scalable", image: img1 },
+    { text: "Scalable", image: img3 }, //Mobile (JS)
     { text: "Robust", image: img2 },
     { text: "Efficient", image: img4 },
     { text: "Innovative", image: img10 },
@@ -31,7 +31,7 @@ export const itemsGroup1 = [
 
 export const itemsGroup2 = [
     { text: "Agile", image: img6 },
-    { text: "Intuitive", image: img7 },
+    { text: "Intuitive", image: img11 }, //Mobile (Angluar)
     { text: "Reliable", image: img3 },
     { text: "Adaptive", image: img11 },
     { text: "Agile", image: img2 },
@@ -45,18 +45,18 @@ export const itemsGroup3 = [
     { text: "Automated", image: img14 },
     { text: "Flexible", image: img6 },
     { text: "Secure", image: img12 },
-    { text: "Seamless", image: img8 },
+    { text: "Seamless", image: img9 }, //Mobile (solidity)
     { text: "Automated", image: img11 },
     { text: "Flexible", image: img12 },
     { text: "Secure", image: img13 },
 ];
 
 export const itemsGroup4 = [
-    { text: "User-Centric", image: img7 },
+    { text: "User-Centric", image: img7 }, //Mobile (CSS)
     { text: "Responsive", image: img8 },
     { text: "Dynamic", image: img13 },  
     { text: "Adaptive", image: img9 },
-    { text: "User-Centric", image: img14 },
+    { text: "User-Centric", image: img14 }, 
     { text: "Responsive", image: img15 },
     { text: "Dynamic", image: img1 },  
     { text: "Adaptive", image: img2 },
