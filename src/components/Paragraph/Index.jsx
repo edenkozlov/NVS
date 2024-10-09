@@ -32,6 +32,7 @@ function Para() {
     
 
   return (
+  
     <div data-color="white" className="para section w-full flex items-center justify-center px-8  ">
         <div className="text sm:w-[80%] flex flex-col items-center sm:items-start justify-between ">
             <div className='hidden w-[50%] sm:flex items-center justify-center mb-12'>
@@ -42,8 +43,8 @@ function Para() {
                 <div className="image w-24 h-24 overflow-hidden rounded-full ">
                     <img src={img1} />
                 </div>
-                <h1 className=' text-[2.8vh] sm:text-[3.8vh] font-medium'>Eden Kozlov</h1>
-                <h3 className='text-zinc-500 text-[2.4vh] whitespace-nowrap'>Product Manager</h3>
+                <h1 className=' text-[2.8vh] sm:text-[3.8vh] font-medium'>CEO</h1>
+                <h3 className='text-zinc-500 text-[2.4vh] whitespace-nowrap'>Eden Kozlov</h3>
             </div>
         </div>  
     </div>

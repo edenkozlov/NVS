@@ -41,8 +41,8 @@ function Para2() {
                 <div className="image w-24 h-24 overflow-hidden rounded-full ">
                     <img src={img1} />
                 </div>
-                <h1 className='text-[2.8vh] sm:text-[3.8vh] font-medium'>Daniel Makhlin</h1>
-                <h3 className='text-zinc-500 text-[2.4vh] whitespace-nowrap'>CEO</h3>
+                <h1 className='text-[2.8vh] sm:text-[3.8vh] font-medium'>CEO</h1>
+                <h3 className='text-zinc-500 text-[2.4vh] whitespace-nowrap'>Daniel Makhlin</h3>
             </div>
         </div>  
     </div>

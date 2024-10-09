@@ -1,16 +1,14 @@
-// index.jsx
-import video from '../../assets/video/1ENIoa5sjq.mp4';
-import Image from '../../assets/images/image.png';
-import Row, { itemsGroup1, itemsGroup2, itemsGroup3, itemsGroup4 } from '../Row';
 import { useEffect, useState, useRef } from 'react';
+import video from '../../assets/video/1ENIoa5sjq.mp4';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
-import { gsap } from "gsap";
+import { gsap } from 'gsap';
 import styles from './Style.module.css';
 import { Power2, Power4 } from 'gsap/gsap-core';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import { BiMenu } from "react-icons/bi";
+import { BiMenu } from 'react-icons/bi';
 import Logo from '../../assets/images/KMG.png';
+import Row, { itemsGroup1, itemsGroup2, itemsGroup3, itemsGroup4 } from '../Row';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,6 +51,22 @@ function Home() {
         setHidden(latest > previous);
     });
 
+    useEffect(() => {
+        // Attempt to play the video programmatically on component mount
+        const videoElement = document.getElementById('heroVideo');
+        if (videoElement) {
+            const playPromise = videoElement.play();
+            if (playPromise !== undefined) {
+                playPromise.catch((error) => {
+                    console.error('Autoplay prevented:', error);
+                    // Fallback logic if autoplay is blocked
+                    videoElement.muted = true; // Ensure it's muted
+                    videoElement.play();
+                });
+            }
+        }
+    }, []);
+
     return (
         <div ref={container} data-color="black" className="home section w-full h-[200vh] relative">
             <div className='w-full sticky top-0 left-0'>
@@ -67,20 +81,19 @@ function Home() {
                             <img src={Logo} alt='Logo' height={48} width={48} />
                         </div>
                         <div className="hidden md:flex gap-2 items-center z-[9] cursor-pointer ">
-                        {["Solutions", "About", "Insight", "Team", "Careers"].map((item, index) => (
-                            <h4 key={index} className={`${styles.links} h-[3vh] relative py[2.4vh] px-[2.2vh] text-center  flex flex-col
-                            font-[Sansita] text-[2.1vh] overflow-hidden font-medium leading-[2.5vh]`}> 
-                                <a className={`atag ${styles.atag} relative`}>{item} </a>
-                                <a className={`atag ${styles.atag} relative`}>{item} </a>                      
-                            </h4>   
-                        ))}
-</div>
+                            {["Solutions", "About", "Insight", "Team", "Careers"].map((item, index) => (
+                                <h4 key={index} className={`${styles.links} h-[3vh] relative py[2.4vh] px-[2.2vh] text-center flex flex-col font-[Sansita] text-[2.1vh] overflow-hidden font-medium leading-[2.5vh]`}>
+                                    <a className={`atag ${styles.atag} relative`}>{item} </a>
+                                    <a className={`atag ${styles.atag} relative`}>{item} </a>
+                                </h4>
+                            ))}
+                        </div>
                         <BiMenu style={{ fontSize: "5.5vw" }} className='inline-block sm:hidden z-[9] cursor-pointer' />
                     </div>
                 </motion.div>
 
                 <div className='btmtext absolute z-[4] bottom-[4%] left-[25%] text-center sm:text-start sm:bottom-[7%] sm:left-8 w-48'>
-                    <h1 className='sm:text-[2vh] font-semibold'>
+                    <h1 className='sm:text-[2vh] font-semibold' style={{ color: 'var(--black)' }}>
                         Software with Purpose.
                         Real Solutions.
                         Designed to make a difference.
@@ -88,12 +101,20 @@ function Home() {
                 </div>
 
                 <div className={`vdodiv w-full h-screen absolute z-[3] top-0 left-0 overflow-hidden sm:overflow-visible ${styles.vdodiv}`}>
-                    <img className="absolute w-full h-screen object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" autoPlay loop muted src={Image}/>
+                    <video
+                        id="heroVideo"
+                        className="absolute w-full h-screen object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        src={video}
+                    />
                 </div>
 
                 <div className="marqueecontainer w-full h-screen relative overflow-hidden">
                     <div className='heading absolute top-[12%] sm:top-[7%] left-1/2 -translate-x-1/2 w-72'>
-                        <h2 className='toptext text-[2.2vh] font-[Sansita] tracking-wide font-medium text-center'>
+                        <h2 className='toptext text-[2.2vh] font-[Sansita] tracking-wide font-medium text-center' style={{ color: 'var(--black)' }}>
                             Crafting a new paradigm of technology, one that is
                         </h2>
                     </div>
@@ -111,7 +132,3 @@ function Home() {
 }
 
 export default Home;
-
-
-
-
