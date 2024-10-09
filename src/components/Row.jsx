@@ -45,7 +45,7 @@ export const itemsGroup3 = [
     { text: "Automated", image: img14 },
     { text: "Flexible", image: img6 },
     { text: "Secure", image: img12 },
-    { text: "Seamless", image: img9 }, //Mobile (solidity)
+    { text: "Seamless", image: img6 }, //Mobile (Rust)
     { text: "Automated", image: img11 },
     { text: "Flexible", image: img12 },
     { text: "Secure", image: img13 },
