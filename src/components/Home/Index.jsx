@@ -82,7 +82,7 @@ function Home() {
                         </div>
                         <div className="hidden md:flex gap-2 items-center z-[9] cursor-pointer ">
                             {["Solutions", "About", "Insight", "Team", "Careers"].map((item, index) => (
-                                <h4 key={index} className={`${styles.links} h-[3vh] relative py[2.4vh] px-[2.2vh] text-center flex flex-col font-[Sansita] text-[2.1vh] overflow-hidden font-medium leading-[2.5vh]`}>
+                                <h4 key={index} className={`${styles.links} h-[3vh] relative py[2.4vh] px-[2.2vh] text-center flex flex-col font-[Sansita] text-[2.1vh] overflow-hidden font-medium leading-[2.5vh]`} style={{ color: 'var(--black)' }}>
                                     <a className={`atag ${styles.atag} relative`}>{item} </a>
                                     <a className={`atag ${styles.atag} relative`}>{item} </a>
                                 </h4>

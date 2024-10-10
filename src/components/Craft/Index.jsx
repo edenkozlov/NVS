@@ -81,15 +81,6 @@ function Craft() {
           <h1 className="texthead font-[SansitaReg] text-[5vh] leading-[6vh] sm:text-[9.8vh] sm:leading-[12vh] mt-10 mb-10">
             Designing Software That Drives Progress.
           </h1>
-          {/* button with navigation to solutions page */}
-          <Button
-            bgColor="bg-none"
-            text="OUR SOLUTIONS"
-            onClick={() => {
-              console.log("Button clicked! Navigating to /OurSolutions");
-              navigate("/OurSolutions");
-            }}
-          />
         </div>
         <div
           ref={container}
