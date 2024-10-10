@@ -9,7 +9,7 @@ import Para3 from './components/Paragraph3';
 import Real from './components/Real/Index';
 import Team from './components/Team/Index';
 import Footer from './components/Footer/Index';
-import OurSolutions from './components/OurSolutions/OurSolutions';
+import Advisory from './components/Advisory/Advisory';
 import { useEffect, useRef } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -51,11 +51,13 @@ function App() {
     <Router>
       <Routes>
         <Route
-          path='/'
+          path="/"
           element={
-            <div className='section main w-full'>
+            <div className="section main w-full">
               <Home />
-              <Craft />
+              <div style={{ marginTop: 'sm:-mt-96 lg:-mt-[480px]' }}> {/* Adjust the negative margin as needed */}
+    <Craft />
+  </div>
               <Real />
               <Team />
               <Para />
@@ -66,7 +68,7 @@ function App() {
             </div>
           }
         />
-        <Route path='/OurSolutions' element={<OurSolutions />} />
+        <Route path="/Advisory" element={<Advisory />} />
       </Routes>
     </Router>
   );
