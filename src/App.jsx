@@ -55,7 +55,9 @@ function App() {
           element={
             <div className="section main w-full">
               <Home />
-              <div style={{ marginTop: 'sm:-mt-96 lg:-mt-[480px]' }}> {/* Adjust the negative margin as needed */}
+              <div style={{
+    marginTop: window.innerWidth >= 1024 ? '-480px' : '0px',
+  }}> 
     <Craft />
   </div>
               <Real />
