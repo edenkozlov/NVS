@@ -55,11 +55,11 @@ function App() {
           element={
             <div className="section main w-full">
               <Home />
-              <div style={{
+             {/*  <div style={{
     marginTop: window.innerWidth >= 1024 ? '-480px' : '0px',
-  }}> 
+  }}> */}
     <Craft />
-  </div>
+  {/*</div> */}
               <Real />
               <Team />
               <Para />
