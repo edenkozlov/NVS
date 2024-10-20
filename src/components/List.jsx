@@ -1,9 +1,10 @@
 
 import img1 from '../assets/images/Imm.png';
-import img2 from '../assets/images/team2.png';
+import img2 from '../assets/images/BTM.png';
 import img3 from '../assets/images/SM.png';
 import img4 from '../assets/images/LS.png';
 import img5 from '../assets/images/AP.png';
+
 import img6 from '../assets/images/team6.png';
 import img7 from '../assets/images/team7.png';
 import img8 from '../assets/images/team8.png';
