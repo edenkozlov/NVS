@@ -56,7 +56,7 @@ function App() {
             <div className="section main w-full">
               <Home />
              {/*  <div style={{
-    marginTop: window.innerWidth >= 1024 ? '-480px' : '0px',
+    marginTop: window.innerWidth >= 1024 ? '-480px' : '0px' lol,
   }}> */}
     <Craft />
   {/*</div> */}
