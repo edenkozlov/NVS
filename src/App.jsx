@@ -13,6 +13,7 @@ import Advisory from './components/Advisory/Advisory';
 import { useEffect, useRef } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Helmet } from 'react-helmet';
 
 function App() {
   const scrollRef = useRef(null);
@@ -48,31 +49,43 @@ function App() {
   });
 
   return (
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="section main w-full">
-              <Home />
-             {/*  <div style={{
-    marginTop: window.innerWidth >= 1024 ? '-480px' : '0px',
-  }}> */}
-    <Craft />
-  {/*</div> */}
-              <Real />
-              <Team />
-              <Para />
-              <Para2 />
-              <Para3 />
-              <Capsule />
-              <Footer />
-            </div>
-          }
-        />
-        <Route path="/Advisory" element={<Advisory />} />
-      </Routes>
-    </Router>
+    <>
+      <Helmet>
+        <meta property="og:title" content="KMG Technologies" />
+        <meta property="og:description" content="KMG Technologies, your go-to solution for tech innovation." />
+        <meta property="og:image" content="/preview.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://kmgtechnologies.com/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="KMG Technologies" />
+        <meta name="twitter:description" content="KMG Technologies, your go-to solution for tech innovation." />
+        <meta name="twitter:image" content="/preview.png" />
+      </Helmet>
+      
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="section main w-full">
+                <Home />
+                <Craft />
+                <Real />
+                <Team />
+                <Para />
+                <Para2 />
+                <Para3 />
+                <Capsule />
+                <Footer />
+              </div>
+            }
+          />
+          <Route path="/Advisory" element={<Advisory />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
