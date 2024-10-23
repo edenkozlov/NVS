@@ -4,23 +4,20 @@ import img2 from '../assets/images/BTM.png';
 import img3 from '../assets/images/SM.png';
 import img4 from '../assets/images/LS.png';
 import img5 from '../assets/images/AP.png';
+import img6 from '../assets/images/Boost.png';
 
-import img6 from '../assets/images/team6.png';
-import img7 from '../assets/images/team7.png';
-import img8 from '../assets/images/team8.png';
-import img9 from '../assets/images/team9.png';
 
 import {useEffect} from 'react';
 import { gsap } from "gsap";
 import { Power4} from 'gsap/gsap-core';
 
 const data = [
-    {key: 1, title: "Immpact", role: "Immigration CRM", img: img1},
-    {key: 2, title: "Blockchain Technology Management", role: "Web3", img: img2},
-    {key: 3, title: "Shark Media", role: "Media Software", img: img3},
-    {key: 4, title: "Luna Studios", role: "Software Collaboration", img: img4},
-    {key: 5, title: "Armoire Privee", role: "Chief Innovation Officer", img: img5},
-    //{key: 6, title: "Michael Robin", role: "VP of Marketing", img: img6},
+    {key: 1, title: "Immpact", role: "Immigration CRM", img: img1, link: "https://immpact-as.ca/landing"},
+    {key: 2, title: "Blockchain Technology Management", role: "Crypto ATM Protocol", img: img2, link: "https://btmtech.ca/"},
+    {key: 3, title: "Boost", role: "Solana Token Launchpad", img: img6, link: "https://boost.fun"},
+    {key: 4, title: "Shark Media", role: "Media Software", img: img3, link: "https://sharkmedia.pro"},
+    {key: 5, title: "Luna Studios", role: "Web3 Studio", img: img4, link: "https://0x-luna-studios.com"},
+    {key: 6, title: "Armoire Privee", role: "Web3 Designer Marketplace", img: img5, link: "https://armoireprivee.com"},
     //{key: 7, title: "Adrian Rubio", role: "VP of Engineering", img: img7},
     //{key: 8, title: "Cy Serrano", role: "VP of Product", img: img8},
     //{key: 9, title: "Lenya McGrath", role: "VP of Partnerships", img: img9},
@@ -72,8 +69,11 @@ function List() {
     <div className="list-container">
       {data.map((item, index) => {
         return (
-          <div 
+          <a 
             key={index} 
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
             className="listelem w-full py-[3vh] sm:px-[4vh] sm:py-[6vh] 
             flex justify-between items-center
             border-b-2 border-black sm:relative"
@@ -99,7 +99,7 @@ function List() {
               <img src={item.img} className='w-[100%] h-[100%] object-contain' />
             </div>
             <div className="hidden sm:inline-block bluelayer sm:absolute top-0 left-0 z-[2] w-full h-0 bg-[#f5f19c]"></div>
-          </div>
+          </a>
         )
       })}
     </div>
