@@ -74,9 +74,9 @@ function App() {
                 <Craft />
                 <Real />
                 <Team />
-                <Para />
-                <Para2 />
                 <Para3 />
+                <Para2 />
+                <Para />
                 <Capsule />
                 <Footer />
               </div>

@@ -41,14 +41,13 @@ function Para2() {
         </div>
         <h3 className="textpara2 sm:w-[40%] text-purple-600 font-[Sansita] text-[2.4vh] sm:text-[3.5vh] font-medium text-center tracking-wide leading-[5vh] mb-10">
           {' '}
-          Daniel is the biggest boiiii by far that has ever existed, lord praise
-          Daniel the big boiii.{' '}
+          Daniel is a versatile full-stack software engineer who thrives in building robust applications from the ground up. With expertise in both backend architecture and frontend logic, he bridges the gap between client needs and technical execution. Daniel is known for his problem-solving mindset, always diving deep into complex challenges to deliver efficient, scalable solutions.{' '}
         </h3>
         <div className="pers w-[40%] flex flex-col items-center justify-center gap-2">
           <div className="image w-24 h-24 overflow-hidden rounded-full ">
             <img src={img1} />
           </div>
-          <h1 className="text-[2.8vh] sm:text-[3.8vh] font-medium">CEO</h1>
+          <h1 className="text-[2.8vh] sm:text-[3.8vh] font-medium">COO</h1>
           <h3 className="text-zinc-500 text-[2.4vh] whitespace-nowrap">
             Daniel Makhlin
           </h3>

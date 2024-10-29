@@ -38,12 +38,12 @@ function Para() {
             <div className='hidden w-[50%] sm:flex items-center justify-center mb-12'>
                 <hr className='bg-zinc-400 w-[20%] h-[.3vh]' />
             </div>    
-            <h3 className='textpara sm:w-[50%] text-[#EF9D71] font-[Sansita] tracking-wide text-[2.4vh] sm:text-[3.5vh] font-medium text-center leading-[5vh] mb-10'>Eden is the biggest boiii by far that has ever existed, lord praise Eden the biggest boiii. </h3>
+            <h3 className='textpara sm:w-[50%] text-[#EF9D71] font-[Sansita] tracking-wide text-[2.4vh] sm:text-[3.5vh] font-medium text-center leading-[5vh] mb-10'>Eden is the creative force behind our user interfaces, specializing in crafting sleek, intuitive designs that enhance user experience. With a keen eye for detail and a passion for pixel-perfect layouts, Eden ensures that each project delivers seamless interactivity and an engaging look and feel. </h3>
             <div className="pers w-[50%] flex flex-col items-center justify-center gap-2 ">
                 <div className="image w-24 h-24 overflow-hidden rounded-full ">
                     <img src={img1} />
                 </div>
-                <h1 className=' text-[2.8vh] sm:text-[3.8vh] font-medium'>CEO</h1>
+                <h1 className=' text-[2.8vh] sm:text-[3.8vh] font-medium'>CFO</h1>
                 <h3 className='text-zinc-500 text-[2.4vh] whitespace-nowrap'>Eden Kozlov</h3>
             </div>
         </div>  
