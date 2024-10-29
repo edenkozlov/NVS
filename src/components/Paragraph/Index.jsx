@@ -38,7 +38,7 @@ function Para() {
             <div className='hidden w-[50%] sm:flex items-center justify-center mb-12'>
                 <hr className='bg-zinc-400 w-[20%] h-[.3vh]' />
             </div>    
-            <h3 className='textpara sm:w-[50%] text-blue-600 font-[Sansita] tracking-wide text-[2.4vh] sm:text-[3.5vh] font-medium text-center leading-[5vh] mb-10'>Eden is the biggest boiii by far that has ever existed, lord praise Eden the biggest boiii. </h3>
+            <h3 className='textpara sm:w-[50%] text-[#EF9D71] font-[Sansita] tracking-wide text-[2.4vh] sm:text-[3.5vh] font-medium text-center leading-[5vh] mb-10'>Eden is the biggest boiii by far that has ever existed, lord praise Eden the biggest boiii. </h3>
             <div className="pers w-[50%] flex flex-col items-center justify-center gap-2 ">
                 <div className="image w-24 h-24 overflow-hidden rounded-full ">
                     <img src={img1} />

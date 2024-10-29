@@ -2,11 +2,12 @@
     --salmon: #EF9D71;
     --black: #000;
     --light: #fff;
-    --cyan:  #aedee0;
+    --cyan: #aedee0;
     --dcyan: #141b1b;
     --dsalmon: #1e130e;
+    --beach: #f5f19c;
+    --dbeach: #1c1a10; /* Darker beach color for text contrast */
 }
-
 
 body {
     transition: background-color ease-out 0.5s;
@@ -16,18 +17,16 @@ body {
     background-color: var(--salmon);
 }
 
-
 body[theme="black"] {
     background-color: var(--light);
-    
 }
 
 body[theme="black"] .section {
     color: var(--light);
 }
+
 body[theme="white"] {
     background-color: var(--light);
-    
 }
 
 body[theme="white"] .section {
@@ -36,7 +35,6 @@ body[theme="white"] .section {
 
 body[theme="cyan"] {
     background-color: var(--cyan);
-    
 }
 
 body[theme="cyan"] .section {
@@ -49,6 +47,15 @@ body[theme="salmon"] {
 
 body[theme="salmon"] .section {
     color: var(--dsalmon);
+}
+
+/* New beach theme styles */
+body[theme="beach"] {
+    background-color: var(--beach);
+}
+
+body[theme="beach"] .section {
+    color: var(--dbeach);
 }
 
 @font-face {

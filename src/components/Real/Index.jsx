@@ -104,7 +104,7 @@ function Real() {
                 18M+
               </h1>
               <h3 className=" text-[2vh] sm:text-[5vh] font-semibold sm:leading-[7vh]">
-                Our reach is global, with software solutions that fuel business
+                Users across platforms, with software solutions that fuel business
                 progress everywhere.
               </h3>
             </div>
@@ -161,14 +161,13 @@ function Real() {
                         sm:text-[2.5vh] absolute sm:top-0 sm:left-0 -translate-x-1/2 -translate-y-[30vh] z-[3] 
                         sm:-translate-y-1/2 sm:-translate-x-1/3"
               >
-                Our team is global and diverse, because our individual
-                experiences make us stronger.
+                With multiple diverse projects, millions have been managed through our secure systems.
               </h3>
               <h1 className=" font-semibold text-[10vh] sm:text-[20vh] leading-none text-white">
-                25+
+               2.2M+ 
               </h1>
               <h3 className="text-[3.5vh] whitespace-nowrap sm:text-[6vh] font-semibold sm:leading-[6vh]">
-                Clients
+                Dollars generated for clients
               </h3>
             </div>
             <div

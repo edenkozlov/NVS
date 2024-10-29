@@ -9,7 +9,7 @@ function Footer() {
       <div className="topfoot  bg-[#f5f19c] pt-16 pb-16 sm:flex items-center justify-between">
         <div className="left sm:w-1/2 px-8 sm:px-8  ">
           <div className="first order-1 font-[SansitaReg]  text-[6vh] leading-[7vh] sm:text-[4.2rem] w-1/3 sm:leading-[5rem] sm:mb-10 ">
-            <h1>Discover Significo.</h1>
+            <h1>Discover KMG.</h1>
           </div>
           {/* <Bu/> */}
           <div className='middle order-3 sm:order-2 w-[20vh] text-center mt-6 px-4 py-4 sm:w-fit sm:px-4 sm:py-[1.6vh] bg-[--black] text-[#f5f19c] whitespace-nowrap'>

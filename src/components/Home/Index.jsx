@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import video from '../../assets/video/KMG_optimized.mp4';
+import video from '../../assets/video/KMG Horizontal_1.mp4';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { gsap } from 'gsap';
 import styles from './Style.module.css';

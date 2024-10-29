@@ -16,7 +16,9 @@ function Team() {
         {/* //single list */}
         <List />
         <div className='flex items-center justify-center py-20'>
-          <Button bgColor="bg-[#f5f19c]" text="MEET THE ENTIRE TEAM" />
+        <h1 className="text-5xl sm:text-6xl text-center tracking-tight">
+          Team Lead
+        </h1>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Para3() {
     useEffect(() => {
-        var clutter = "";
+        var clutter = '';
         const para = document.querySelector(".textpara")
         const characters = para.textContent.split("")
         characters.forEach(function(e) {
