@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import video from '../../assets/video/KMG Horizontal_1.mp4';
+import video from '../../assets/video/KMG_optimized.mp4';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { gsap } from 'gsap';
 import styles from './Style.module.css';
@@ -93,6 +93,7 @@ function Home() {
 
   return (
     <div
+      id="home"
       ref={container}
       data-color="black"
       className="home section w-full h-[200vh] relative"

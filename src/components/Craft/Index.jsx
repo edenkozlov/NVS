@@ -64,6 +64,7 @@ function Craft() {
 
     return (
       <div
+        id="solutions"
         data-color="cyan"
         className="craft section w-full sm:flex gap-x-40 justify-between 
             items-center px-8 py-8 sm:px-10 relative "

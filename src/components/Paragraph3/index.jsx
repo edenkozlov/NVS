@@ -32,7 +32,7 @@ function Para3() {
     
 
   return (
-    <div data-color="white" className="para section w-full flex items-center justify-center px-8  ">
+    <div id="team"data-color="white" className="para section w-full flex items-center justify-center px-8  ">
         <div className="text sm:w-[80%] flex flex-col items-center sm:items-start justify-between ">
             <div className='hidden w-[50%] sm:flex items-center justify-center mb-12'>
                 <hr className='bg-zinc-400 w-[20%] h-[.3vh]' />

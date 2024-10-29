@@ -167,7 +167,7 @@ function Real() {
                2.2M+ 
               </h1>
               <h3 className="text-[3.5vh] whitespace-nowrap sm:text-[6vh] font-semibold sm:leading-[6vh]">
-                Dollars generated for clients
+                Dollars securly managed for clients 
               </h3>
             </div>
             <div
