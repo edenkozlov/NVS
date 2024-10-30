@@ -16,6 +16,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Helmet } from 'react-helmet';
 import Form from './components/Form/Form';
 
+
+
+const basename = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_PUBLIC_URL : '/';
+
 function App() {
   const scrollRef = useRef(null);
 
@@ -65,13 +69,14 @@ function App() {
         <meta name="twitter:image" content="/preview.png" />
       </Helmet>
       
-      <Router>
+      <Router basename={basename} >
         <Routes>
           <Route
             path="/"
             element={
               <div className="section main w-full">
                 <Home />
+                
                 <Craft />
                 <Real />
                 <Team />
