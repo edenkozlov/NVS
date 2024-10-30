@@ -14,6 +14,7 @@ import { useEffect, useRef } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Helmet } from 'react-helmet';
+import Form from './components/Form/Form';
 
 function App() {
   const scrollRef = useRef(null);
@@ -82,7 +83,8 @@ function App() {
               </div>
             }
           />
-          <Route path="/Advisory" element={<Advisory />} />
+          <Route path="/advisory" element={<Advisory />} />
+          <Route path="/form" element={<Form />} />
         </Routes>
       </Router>
     </>
