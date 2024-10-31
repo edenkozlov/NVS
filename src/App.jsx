@@ -18,7 +18,7 @@ import Form from './components/Form/Form';
 
 
 
-const basename = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_PUBLIC_URL : '/';
+
 
 function App() {
   const scrollRef = useRef(null);
@@ -69,7 +69,7 @@ function App() {
         <meta name="twitter:image" content="/preview.png" />
       </Helmet>
       
-      <Router basename={basename} >
+      <Router >
         <Routes>
           <Route
             path="/"

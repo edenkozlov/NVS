@@ -151,6 +151,7 @@ function Home() {
             muted
             playsInline
             src={video}
+            preload="auto"
           />
         </div>
 
