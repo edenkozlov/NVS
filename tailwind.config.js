@@ -6,10 +6,10 @@ export default {
   ],
   theme: {
     screens: {
-      sm: '430px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
+   sm: '640px',   // Adjusted for large mobile screens
+      md: '768px',   // Tablet
+      lg: '1024px',  // Desktop
+      xl: '1440px',  // Large desktop
     },
     extend: {},
   },

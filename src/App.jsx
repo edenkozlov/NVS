@@ -6,6 +6,7 @@ import Home from './components/Home/Index';
 import Para from './components/Paragraph/Index';
 import Para2 from './components/Paragraph2/Index';
 import Para3 from './components/Paragraph3';
+import Para4 from './components/Paragraph4';
 import Real from './components/Real/Index';
 import Team from './components/Team/Index';
 import Footer from './components/Footer/Index';
@@ -83,6 +84,7 @@ function App() {
                 <Para3 />
                 <Para2 />
                 <Para />
+                <Para4 />
                 <Capsule />
                 <Footer />
               </div>
