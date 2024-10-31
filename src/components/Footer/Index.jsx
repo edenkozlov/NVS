@@ -108,7 +108,7 @@ function Footer() {
             </div>
           </div>
           <div className=" hidden sm:inline-block ">
-            {['Insights', 'Newsroom', 'Resources', 'Careers', 'Contact'].map(
+            {["Solutions", "About", "Insight", "Team", "Contact"].map(
               (item, index) => {
                 return (
                   <div key={index} className="pb-4">

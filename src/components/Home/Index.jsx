@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import video from '../../assets/video/KMG_optimized.mp4';
+import video from '../../assets/video/KMG HorizontalW.mp4';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { gsap } from 'gsap';
 import styles from './Style.module.css';
@@ -110,8 +110,9 @@ function Home() {
               <img src={Logo} alt="Logo" height={48} width={48} />
             </div>
             <div className="hidden md:flex gap-2 items-center z-[9] cursor-pointer ">
-              {["Solutions", "About", "Insight", "Team", "Careers"].map(
+              {["Solutions", "About", "Insight", "Team", "Contact"].map(
                 (item, index) => (
+                  
                   <h4
                     key={index}
                     className={`${styles.links} h-[3vh] relative py[2.4vh] px-[2.2vh] text-center flex flex-col font-[Sansita] text-[2.1vh] overflow-hidden font-medium leading-[2.5vh]`}
