@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
-import desktopVideo from '../../assets/video/KMG_optimized2.mp4';
-import mobileVideo from '../../assets/video/KMGVerticalWM_compatible.mp4';
+import desktopVideo from '../../assets/video/Hero.png';
+import mobileVideo from '../../assets/video/HeroM.png';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { gsap } from 'gsap';
 import styles from './Style.module.css';
@@ -8,7 +8,7 @@ import { Power2, Power4 } from 'gsap/gsap-core';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { BiMenu } from 'react-icons/bi';
-import Logo from '../../assets/images/KMG.png';
+import Logo from '../../assets/images/NVS.png';
 import Row, { itemsGroup1, itemsGroup2, itemsGroup3, itemsGroup4 } from '../Row';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -95,10 +95,10 @@ function Home() {
         >
           <div className="w-full flex sm:flex items-center justify-between">
             <div className="logo w-[12vh] h-[12vh] sm:w-[16vh] sm:h-[10vh] cursor-pointer z-[9] mt-2">
-              <img src={Logo} alt="Logo" height={48} width={48} />
+              <h3 className='font-semibold' >NVS</h3>
             </div>
             <div className="hidden md:flex gap-2 items-center z-[9] cursor-pointer ">
-              {["Solutions", "About", "Insight", "Team", "Contact"].map(
+              {["Solutions", "Clients", "Team", "Contact"].map(
                 (item, index) => (
                   <h4
                     key={index}
@@ -133,26 +133,20 @@ function Home() {
           className={`vdodiv w-full h-screen absolute z-[3] top-0 left-0 overflow-hidden sm:overflow-visible ${styles.vdodiv}`}
         >
           {/* Desktop Video */}
-          <video
+          <img
             ref={desktopVideoRef}
             className="desktop-video absolute w-full h-screen object-cover object-bottom hidden sm:block"
-            loop
-            muted
-            playsInline
-            preload="auto"
+          
             src={desktopVideo}
           />
 
           {/* Mobile Video */}
-          <video
+          <img
             ref={mobileVideoRef}
             className="mobile-video absolute w-full h-screen object-cover object-bottom block sm:hidden"
-            loop
-            muted
-            playsInline
-            preload="auto"
+        
             src={mobileVideo}
-            autoPlay // Auto-play for mobile video
+         
           />
         </div>
 

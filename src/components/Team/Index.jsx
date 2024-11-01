@@ -15,11 +15,7 @@ function Team() {
       <div className="list mt-10 w-full px-8">
         {/* //single list */}
         <List />
-        <div className='flex items-center justify-center py-20'>
-        <h1 className="text-5xl sm:text-6xl text-center tracking-tight">
-          Team Lead
-        </h1>
-        </div>
+       
       </div>
     </div>
   )
