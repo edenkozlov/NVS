@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Capsule from './components/Capsule/Index';
 import Craft from './components/Craft/Index';
 import Home from './components/Home/Index';
-
+import Para from './components/Paragraph/Index';
 import Team from './components/Team/Index';
 import Footer from './components/Footer/Index';
 
@@ -75,6 +75,7 @@ function App() {
                 <Home />
                 <Craft />
                 <Team />
+                <Para />
                 <Capsule />
                 <Footer />
               </div>
