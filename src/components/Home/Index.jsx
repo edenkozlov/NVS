@@ -1,10 +1,6 @@
-
-
-
-
 import { useEffect, useState, useRef } from 'react';
-import video from '../../assets/video/KMG_optimized.mp4';
-//import mobilVvideo from '../../assets/video/KMG VerticalWM.mp4';
+import desktopVideo from '../../assets/video/KMG_optimized2.mp4';
+import mobileVideo from '../../assets/video/KMGVerticalWM.mp4';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { gsap } from 'gsap';
 import styles from './Style.module.css';
@@ -19,7 +15,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
   const container = useRef(null);
-  const videoRef = useRef(null);
+  const desktopVideoRef = useRef(null);
+  const mobileVideoRef = useRef(null);
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
 
@@ -36,8 +33,6 @@ function Home() {
       stagger: 0.03,
     });
   }, []);
-
-  
 
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -60,42 +55,28 @@ function Home() {
   });
 
   useEffect(() => {
-    const videoElement = videoRef.current;
+    // Desktop mouse control
+    const videoElement = desktopVideoRef.current;
     if (!videoElement) return;
 
-    // Check if the device is mobile
-    const isMobile = window.innerWidth <= 768 || /Mobi|Android/i.test(navigator.userAgent);
+    videoElement.currentTime = 1.4;
 
-    if (isMobile) {
-      // Auto-play video on loop for mobile devices
-      videoElement.play();
-    } else {
-      // Set initial video time to 1 second for desktop
-      videoElement.currentTime = 1;
+    let animationFrameId;
+    const handleMouseMove = (event) => {
+      const windowWidth = window.innerWidth;
+      const mouseX = event.clientX;
+      const maxVideoTime = 2;
+      const videoTime = (mouseX / windowWidth) * maxVideoTime;
+      animationFrameId = requestAnimationFrame(() => {
+        videoElement.currentTime = videoTime;
+      });
+    };
 
-      let animationFrameId;
-
-      const handleMouseMove = (event) => {
-        const windowWidth = window.innerWidth;
-        const mouseX = event.clientX;
-
-        const maxVideoTime = 2; // Interested in first 2 seconds
-        const videoTime = (mouseX / windowWidth) * maxVideoTime;
-
-        // Smooth updates with requestAnimationFrame
-        animationFrameId = requestAnimationFrame(() => {
-          videoElement.currentTime = videoTime;
-        });
-      };
-
-      window.addEventListener('mousemove', handleMouseMove);
-
-      // Cleanup event listener and animation frame
-      return () => {
-        window.removeEventListener('mousemove', handleMouseMove);
-        cancelAnimationFrame(animationFrameId);
-      };
-    }
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      cancelAnimationFrame(animationFrameId);
+    };
   }, []);
 
   return (
@@ -119,7 +100,6 @@ function Home() {
             <div className="hidden md:flex gap-2 items-center z-[9] cursor-pointer ">
               {["Solutions", "About", "Insight", "Team", "Contact"].map(
                 (item, index) => (
-                  
                   <h4
                     key={index}
                     className={`${styles.links} h-[3vh] relative py[2.4vh] px-[2.2vh] text-center flex flex-col font-[Sansita] text-[2.1vh] overflow-hidden font-medium leading-[2.5vh]`}
@@ -148,18 +128,31 @@ function Home() {
           </h1>
         </div>
 
+        {/* Video container */}
         <div
           className={`vdodiv w-full h-screen absolute z-[3] top-0 left-0 overflow-hidden sm:overflow-visible ${styles.vdodiv}`}
         >
+          {/* Desktop Video */}
           <video
-            id="heroVideo"
-            ref={videoRef}
-            className="absolute w-full h-screen object-cover object-bottom"
+            ref={desktopVideoRef}
+            className="desktop-video absolute w-full h-screen object-cover object-bottom hidden sm:block"
             loop
             muted
             playsInline
-            src={video}
             preload="auto"
+            src={desktopVideo}
+          />
+
+          {/* Mobile Video */}
+          <video
+            ref={mobileVideoRef}
+            className="mobile-video absolute w-full h-screen object-cover object-bottom block sm:hidden"
+            loop
+            muted
+            playsInline
+            preload="auto"
+            src={mobileVideo}
+            autoPlay // Auto-play for mobile video
           />
         </div>
 
@@ -202,4 +195,3 @@ function Home() {
 }
 
 export default Home;
-
