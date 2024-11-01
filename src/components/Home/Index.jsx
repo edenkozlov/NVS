@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import desktopVideo from '../../assets/video/KMG_optimized2.mp4';
-import mobileVideo from '../../assets/video/KMG_optimized2.mp4';
+import mobileVideo from '../../assets/video/KMGVerticalWM_compatible.mp4';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { gsap } from 'gsap';
 import styles from './Style.module.css';
