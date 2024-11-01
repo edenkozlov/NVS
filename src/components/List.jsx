@@ -5,7 +5,7 @@ import img3 from '../assets/images/SM.png';
 import img4 from '../assets/images/LS.png';
 import img5 from '../assets/images/AP.png';
 import img6 from '../assets/images/Boost.png';
-
+import img7 from '../assets/images/TNF.png';
 
 import {useEffect} from 'react';
 import { gsap } from "gsap";
@@ -18,7 +18,7 @@ const data = [
     {key: 4, title: "Shark Media", role: "Media Software", img: img3, link: "https://sharkmedia.pro"},
     {key: 5, title: "Luna Studios", role: "Web3 Studio", img: img4, link: "https://0x-luna-studios.com"},
     {key: 6, title: "Armoire Privee", role: "Web3 Designer Marketplace", img: img5, link: "https://armoireprivee.com"},
-    //{key: 7, title: "Adrian Rubio", role: "VP of Engineering", img: img7},
+    {key: 7, title: "The National Fix", role: "Maintenence Management CRM", img: img7, link: "https://www.thenationalfix.com/"},
     //{key: 8, title: "Cy Serrano", role: "VP of Product", img: img8},
     //{key: 9, title: "Lenya McGrath", role: "VP of Partnerships", img: img9},
 ]

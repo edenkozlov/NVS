@@ -1,5 +1,10 @@
+
+
+
+
 import { useEffect, useState, useRef } from 'react';
 import video from '../../assets/video/KMG HorizontalW.mp4';
+//import mobilVvideo from '../../assets/video/KMG VerticalWM.mp4';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { gsap } from 'gsap';
 import styles from './Style.module.css';
@@ -31,6 +36,8 @@ function Home() {
       stagger: 0.03,
     });
   }, []);
+
+  
 
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -195,3 +202,4 @@ function Home() {
 }
 
 export default Home;
+
