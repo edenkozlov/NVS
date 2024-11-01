@@ -3,7 +3,7 @@
 
 
 import { useEffect, useState, useRef } from 'react';
-import video from '../../assets/video/KMG HorizontalW.mp4';
+import video from '../../assets/video/KMG_optimized.mp4';
 //import mobilVvideo from '../../assets/video/KMG VerticalWM.mp4';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { gsap } from 'gsap';
