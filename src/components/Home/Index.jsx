@@ -8,7 +8,7 @@ import { Power2, Power4 } from 'gsap/gsap-core';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { BiMenu } from 'react-icons/bi';
-import Logo from '../../assets/images/NVS.png';
+
 import Row, { itemsGroup1, itemsGroup2, itemsGroup3, itemsGroup4 } from '../Row';
 
 gsap.registerPlugin(ScrollTrigger);
